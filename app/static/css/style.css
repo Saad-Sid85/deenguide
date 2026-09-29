@@ -1,0 +1,424 @@
+/* ================================
+   DeenGuide - Main Styles
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8faf9;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ================================
+   Buttons
+   ================================ */
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn-primary {
+    background: #176b5b;
+    color: white;
+    border: 1px solid #176b5b;
+}
+
+.btn-primary:hover {
+    background: #125448;
+    border-color: #125448;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #176b5b;
+    border: 1px solid #176b5b;
+}
+
+.btn-outline:hover {
+    background: #176b5b;
+    color: white;
+}
+
+/* ================================
+   Navbar
+   ================================ */
+
+.navbar {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #176b5b;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #4b5563;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #176b5b;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ================================
+   Hero
+   ================================ */
+
+.hero {
+    padding: 100px 0;
+    background: linear-gradient(
+        135deg,
+        #eef8f4 0%,
+        #f8faf9 60%,
+        #e9f5f1 100%
+    );
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.hero-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #176b5b;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    color: #172b26;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 650px;
+    color: #5f6b66;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* ================================
+   Section Heading
+   ================================ */
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-heading span {
+    color: #176b5b;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    color: #172b26;
+    font-size: 32px;
+}
+
+.section-heading p {
+    color: #6b7280;
+}
+
+/* ================================
+   Search Section
+   ================================ */
+
+.search-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.search-box {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-box input:focus {
+    border-color: #176b5b;
+}
+
+/* ================================
+   Features
+   ================================ */
+
+.features-section {
+    padding: 80px 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 28px;
+    transition: 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    border-color: #b8d8ce;
+    box-shadow: 0 10px 25px rgba(23, 107, 91, 0.08);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef8f4;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #172b26;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.feature-card a {
+    color: #176b5b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ================================
+   How It Works
+   ================================ */
+
+.how-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.step-card {
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #f8faf9;
+}
+
+.step-number {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #176b5b;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.step-card h3 {
+    margin-bottom: 8px;
+    color: #172b26;
+    font-size: 21px;
+}
+
+.step-card p {
+    color: #6b7280;
+}
+
+/* ================================
+   Footer
+   ================================ */
+
+.footer {
+    background: #172b26;
+    color: white;
+    padding: 45px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer h3 {
+    margin-bottom: 8px;
+}
+
+.footer p {
+    color: #c8d3cf;
+    font-size: 14px;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-container {
+        min-height: 65px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-actions .btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .search-section,
+    .features-section,
+    .how-section {
+        padding: 60px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box .btn {
+        width: 100%;
+    }
+
+    .feature-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
