@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - DeenGuide</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-container">
+
+            <a href="/" class="logo">DeenGuide</a>
+
+            <nav class="nav-links">
+                <a href="/dashboard">Dashboard</a>
+                <a href="#">Qur'an</a>
+                <a href="#">Hadith</a>
+                <a href="#">Books</a>
+                <a href="#">Quizzes</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="/logout" class="btn btn-outline">Logout</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="dashboard-section">
+
+            <div class="container">
+
+                <div class="dashboard-header">
+
+                    <div>
+                        <span class="dashboard-label">
+                            DeenGuide Dashboard
+                        </span>
+
+                        <h1>
+                            Assalamu Alaikum,
+                            {{ user_name }}
+                        </h1>
+
+                        <p>
+                            Continue your Islamic learning and explore
+                            Qur'an, Hadith and trusted Islamic resources.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-grid">
+
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">📖</div>
+
+                        <h3>Explore Qur'an</h3>
+
+                        <p>
+                            Read Qur'anic verses with translations
+                            and references.
+                        </p>
+
+                        <a href="#">Explore →</a>
+                    </div>
+
+
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">📚</div>
+
+                        <h3>Explore Hadith</h3>
+
+                        <p>
+                            Search and study Hadith collections
+                            with their references.
+                        </p>
+
+                        <a href="#">Explore →</a>
+                    </div>
+
+
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">📕</div>
+
+                        <h3>Islamic Books</h3>
+
+                        <p>
+                            Browse available Islamic books and
+                            learning resources.
+                        </p>
+
+                        <a href="#">Browse →</a>
+                    </div>
+
+
+                    <div class="dashboard-card">
+                        <div class="dashboard-icon">🧠</div>
+
+                        <h3>Islamic Quizzes</h3>
+
+                        <p>
+                            Test your knowledge and practice
+                            what you have learned.
+                        </p>
+
+                        <a href="#">Take Quiz →</a>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-search">
+
+                    <div class="section-heading">
+                        <span>Knowledge Search</span>
+
+                        <h2>Ask something about your Deen</h2>
+
+                        <p>
+                            Search Islamic knowledge and explore
+                            relevant references.
+                        </p>
+                    </div>
+
+                    <div class="search-box">
+
+                        <input
+                            type="text"
+                            placeholder="Ask a question..."
+                        >
+
+                        <button class="btn btn-primary">
+                            Search
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+                <h3>DeenGuide</h3>
+
+                <p>
+                    An Islamic knowledge and learning platform
+                    for students and learners.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    © 2026 DeenGuide. Built for learning and exploration.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

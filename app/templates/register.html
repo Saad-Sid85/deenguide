@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - DeenGuide</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-container">
+
+            <a href="/" class="logo">DeenGuide</a>
+
+            <div class="nav-actions">
+                <a href="/" class="btn btn-outline">Home</a>
+                <a href="/login" class="btn btn-primary">Login</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="auth-section">
+
+            <div class="auth-container">
+
+                <div class="auth-header">
+                    <span>Join DeenGuide</span>
+
+                    <h1>Create your account</h1>
+
+                    <p>
+                        Create an account to continue your Islamic
+                        learning and keep track of your studies.
+                    </p>
+                </div>
+
+
+                <form class="auth-form" method="POST" action="/register">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="background">Learning Background</label>
+
+                        <select id="background" name="background">
+
+                            <option value="">
+                                Select your background
+                            </option>
+
+                            <option value="madrasa">
+                                Madrasa / Islamic Institute
+                            </option>
+
+                            <option value="islamic_college">
+                                Islamic College / University
+                            </option>
+
+                            <option value="self_study">
+                                Self Study
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="institution">
+                            Institution / Madrasa Name
+                            <span class="optional">(Optional)</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="institution"
+                            name="institution"
+                            placeholder="Enter institution name"
+                        >
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                required
+                            >
+                        </div>
+
+                        
+                        <div class="form-group">
+                            <label for="confirm_password">
+                                Confirm Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="confirm_password"
+                                name="confirm_password"
+                                placeholder="Confirm your password"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary auth-button">
+                        Create Account
+                    </button>
+
+                </form>
+
+
+                <div class="auth-footer">
+
+                    <p>
+                        Already have an account?
+                        <a href="/login">Login here</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+                <h3>DeenGuide</h3>
+
+                <p>
+                    An Islamic knowledge and learning platform
+                    for students and learners.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    © 2026 DeenGuide. Built for learning and exploration.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

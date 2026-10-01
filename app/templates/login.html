@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - DeenGuide</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-container">
+
+            <a href="/" class="logo">DeenGuide</a>
+
+            <div class="nav-actions">
+                <a href="/" class="btn btn-outline">Home</a>
+                <a href="/register" class="btn btn-primary">Register</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="auth-section">
+
+            <div class="auth-container">
+
+                <div class="auth-header">
+                    <span>Welcome Back</span>
+
+                    <h1>Login to DeenGuide</h1>
+
+                    <p>
+                        Continue your Islamic learning and
+                        explore your saved activity.
+                    </p>
+                </div>
+
+
+                <form class="auth-form" method="POST" action="/login">
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary auth-button">
+                        Login
+                    </button>
+
+                </form>
+
+
+                <div class="auth-footer">
+
+                    <p>
+                        Don't have an account?
+                        <a href="/register">Create an account</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+                <h3>DeenGuide</h3>
+
+                <p>
+                    An Islamic knowledge and learning platform
+                    for students and learners.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    © 2026 DeenGuide. Built for learning and exploration.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
